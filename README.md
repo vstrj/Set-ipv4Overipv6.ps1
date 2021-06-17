@@ -26,3 +26,30 @@ Run script with default values:
 Removes the predefined values from the registry
 
 .\set-ipv4overipv6.ps1 -Remove
+
+
+To run from Intune:
+
+Install:
+
+powershell.exe -noprofile -executionpolicy bypass -file .\Set-ipv4Overipv6.ps1
+
+Uninstall
+
+
+powershell.exe -NoProfile -Executionpolicy bypass -Command "& Set-ipv4Overipv6.ps1 -Remove"
+
+
+Select "Intune will force a mandatory device restart" since the effect of the script will not apply until a reboot has occured.
+
+Detection rule:
+
+HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\Tcpip6\Parameters 
+
+DisabledComponents
+
+0x20
+
+
+
+![image](https://user-images.githubusercontent.com/51228126/122414983-d241e300-cf87-11eb-8a4c-305a00469d9c.png)
