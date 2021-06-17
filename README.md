@@ -25,7 +25,7 @@ Sets a registry value that makes a computer perfer IPv4 over IPv6. With a log fu
 
   Removes the predefined values from the registry
 
-  .\set-ipv4overipv6.ps1 -Remove
+  .\set-ipv4overipv6.ps1 -RemoveRegKey
 
 
 To run from Intune:
@@ -37,7 +37,7 @@ powershell.exe -noprofile -executionpolicy bypass -file .\Set-ipv4Overipv6.ps1
 Uninstall
 
 
-powershell.exe -NoProfile -Executionpolicy bypass -Command "& Set-ipv4Overipv6.ps1 -Remove"
+powershell.exe -NoProfile -Executionpolicy bypass -Command "& Set-ipv4Overipv6.ps1 -RemoveRegKey"
 
 
 Select "Intune will force a mandatory device restart" since the effect of the script will not apply until a reboot has occured.
