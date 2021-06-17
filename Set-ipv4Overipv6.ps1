@@ -14,7 +14,7 @@ to Value 0x20
 Run script with default values:
 .\set-ipv4overipv6.ps1 
 Removes the predefined valus from the registry
-.\set-ipv4overipv6.ps1 -Remove
+.\set-ipv4overipv6.ps1 -RemoveRegKey
 
 #>
 
