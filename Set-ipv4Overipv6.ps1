@@ -19,6 +19,7 @@ Removes the predefined valus from the registry
 #>
 
 #Setting script parameters
+#Switch parameter used to remove reg key
 param (
     [switch]$RemoveRegKey
 )
