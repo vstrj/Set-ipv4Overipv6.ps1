@@ -79,7 +79,7 @@ Write-EventLogEntry -Message ('Running Script Set-IPv4OverIPv6')
       [Parameter()]
       [String] $regValue = "0x20",
       [Parameter()]
-      [String] $regType  = “DWord”,
+      [String] $regType  = "DWord",
       [Parameter(Mandatory=$false)]
       [Switch]$Remove
     )
